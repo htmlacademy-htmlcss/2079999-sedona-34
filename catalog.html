@@ -53,6 +53,7 @@
           </li>
         </ol>
         <section class="catalog-filters">
+          <h2 class="visually-hidden">Фильтры</h2>
           <form class="catalog-filters-form" action="https://echo.htmlacademy.ru/" method="post">
             <fieldset class="catalog-filters-group">
               <legend class="catalog-filters-title">Инфраструктура:</legend>
@@ -112,9 +113,145 @@
           </form>
         </section>
       </header>
+      <section class="catalog-display">
+        <h2 class="visually-hidden">Каталог гостиниц</h2>
+        <p class="catalog-display-title">Найдено гостиниц: 38</p>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="expensive">Сначала дорогое</option>
+          <option value="popular">Сначала популярное</option>
+        </select>
+        <a href="#" class="button-display current">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a href="#" class="button-display">
+          <span class="visually-hidden">Показать cлайдшоу</span>
+        </a>
+        <a href="#" class="button-display">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <ul class="catalog-display-list">
+          <li class="catalog-display-item">
+            <img src="#" alt="Территория Amara Resort & Spa">
+            <h3 class="catalog-display-title">Amara Resort & Spa</h3>
+            <span class="catalog-display-discription">Гостиница</span>
+            <span class="catalog-display-discription">От 4000 ₽</span>
+            <a class="catalog-display-button button" href="#">Подробнее</a>
+            <button class="catalog-display-button button" type="button">В избранное</button>
+            <span class="visually-hidden">Количество звезд</span>
+            <span class="catalog-display-rating">Рейтинг: 8,5</span>
+          </li>
+          <li class="catalog-display-item">
+            <img src="#" alt="Территория Villas at Poco Diablo">
+            <h3 class="catalog-display-title">Villas at Poco Diablo</h3>
+            <span class="catalog-display-discription">Гостиница</span>
+            <span class="catalog-display-discription">От 5000 ₽</span>
+            <a class="catalog-display-button button" href="#">Подробнее</a>
+            <button class="catalog-display-button button" type="button">В избранное</button>
+            <span class="visually-hidden">Количество звезд</span>
+            <span class="catalog-display-rating">Рейтинг: 9,2</span>
 
+          </li>
+          <li class="catalog-display-item">
+            <img src="#" alt="Территория Desert Quail Inn">
+            <h3 class="catalog-display-title">Desert Quail Inn</h3>
+            <span class="catalog-display-discription">Гостиница</span>
+            <span class="catalog-display-discription">От 2500 ₽</span>
+            <a class="catalog-display-button button" href="#">Подробнее</a>
+            <button class="catalog-display-button button" type="button">В избранное</button>
+            <span class="visually-hidden">Количество звезд</span>
+            <span class="catalog-display-rating">Рейтинг: 6,9</span>
 
+          </li>
+          <li class="catalog-display-item">
+            <img src="#" alt="Территория GreenTree Inn">
+            <h3 class="catalog-display-title">GreenTree Inn</h3>
+            <span class="catalog-display-discription">Гостиница</span>
+            <span class="catalog-display-discription">От 1500 ₽</span>
+            <a class="catalog-display-button button" href="#">Подробнее</a>
+            <button class="catalog-display-button button" type="button">В избранное</button>
+            <span class="visually-hidden">Количество звезд</span>
+            <span class="catalog-display-rating">Рейтинг: 5,0</span>
+          </li>
+        </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item">
+            <a href="#" class="pagination-link current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#" class="pagination-link">2</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#" class="pagination-link">3</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#" class="pagination-link">4</a>
+          </li>
+          <li class="pagination-item">
+            <a href="#" class="pagination-link other">
+              <span class="visually-hidden">Остальные страницы</span>
+            </a>
+          </li>
+          <li class="pagination-item">
+            <a href="#" class="pagination-link">10</a>
+          </li>
+        </ul>
+        <label class="select-title">
+          Гостиниц на странице:
+          <select class="select-control">
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+            <option value="six">6</option>
+            <option value="seven">7</option>
+            <option value="eight">8</option>
+          </select>
+        </label>
+      </section>
+      <section class="newsletters catalog">
+        <h2 class="newsletters-title">Подпишитесь на рассылку</h2>
+        <p class="newsletters-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletters-form" action="https://echo.htmlacademy.ru/" method="post">
+          <input class="newsletters-form-email" type="email" name="newsletters-email" placeholder="Ваш e-mail" required>
+          <button class="newsletters-form-button" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
+
+    <footer class="footer">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <section class="footer-social">
+        <h3 class="visually-hidden">Соцсети</h3>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-vk" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-contacts">
+        <h3 class="visually-hidden">Телефон</h3>
+        <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </section>
+      <section class="footer-logo">
+        <h3 class="visually-hidden">Ссылка на HTML Academy</h3>
+        <a class="footer-logo-link" href="https://htmlacademy.ru/" target="_blank">
+          <img class="footer-logo-img" src="#" alt="Логотип HTML Academy">
+        </a>
+      </section>
+    </footer>
   </body>
 </html>
