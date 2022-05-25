@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Егор Горцуев](https://up.htmlacademy.ru/htmlcss/34/user/2079999).
-* Наставник: `Неизвестно`.
+* Наставник: [Антон Попов](https://htmlacademy.ru/profile/joker).
 
 ---
 
