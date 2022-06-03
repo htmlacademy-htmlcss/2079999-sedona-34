@@ -55,9 +55,8 @@ body {
 }
 
 .welcome-background {
-  width: cover;
-  height: 485px;
   background-image: url("../images/divider-mountains.svg"), url("../images/mountains.jpg");
+  background-size: auto 100% auto 100%;
   background-repeat: no-repeat;
   background-position: bottom;
   text-align: center;
@@ -144,6 +143,7 @@ body {
 .newsletters {
   width: cover;
   height: 411px;
+  background-color: #82B3D3;
   background-image: url("../images/mountains-background-newsletters.jpg");
   background-repeat: no-repeat;
 }
@@ -174,8 +174,9 @@ body {
 }
 
 .catalog-header {
+  background-color: #82B3D3;
   background-image: url("../images/mountains-background-filters.jpg");
-  background-size: 1200px 403px;
+  background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
