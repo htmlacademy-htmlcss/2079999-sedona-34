@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="header">
@@ -115,11 +117,11 @@
       </header>
       <section class="catalog-display">
         <h2 class="visually-hidden">Каталог гостиниц</h2>
-        <p class="catalog-display-title">Найдено гостиниц: 38</p>
+        <p class="catalog-display-found">Найдено гостиниц: 38</p>
         <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешёвое</option>
-          <option value="expensive">Сначала дорогое</option>
-          <option value="popular">Сначала популярное</option>
+          <option value="cheap">Сначала дешевые</option>
+          <option value="expensive">Сначала дорогие</option>
+          <option value="popular">Сначала популярные</option>
         </select>
         <a href="#" class="button-display current">
           <span class="visually-hidden">Показать карточки</span>
@@ -133,57 +135,57 @@
         <ul class="catalog-display-list">
           <li class="catalog-display-item">
             <a class="catalog-display-link" href="#">
-              <img src="images/hotel-1.jpg" width="300" height="211" alt="Территория Amara Resort & Spa">
+              <img src="images/hotel-amara.jpg" width="300" height="211" alt="Территория Amara Resort & Spa">
               <h3 class="catalog-display-title">Amara Resort & Spa</h3>
             </a>
             <span class="catalog-display-discription">Гостиница</span>
             <span class="catalog-display-discription">От 4000 ₽</span>
             <a class="catalog-display-button button" href="#">Подробнее</a>
-            <button class="catalog-display-button button" type="button">В избранное</button>
+            <a class="catalog-display-button button" href="#">В избранное</a>
             <span class="visually-hidden">Количество звезд</span>
             <span class="catalog-display-rating">Рейтинг: 8,5</span>
           </li>
           <li class="catalog-display-item">
             <a class="catalog-display-link" href="#">
-              <img src="images/hotel-2.jpg" width="300" height="211" alt="Территория Villas at Poco Diablo">
+              <img src="images/hotel-poco-diablo.jpg" width="300" height="211" alt="Территория Villas at Poco Diablo">
               <h3 class="catalog-display-title">Villas at Poco Diablo</h3>
             </a>
             <span class="catalog-display-discription">Гостиница</span>
             <span class="catalog-display-discription">От 5000 ₽</span>
             <a class="catalog-display-button button" href="#">Подробнее</a>
-            <button class="catalog-display-button button" type="button">В избранное</button>
+            <a class="catalog-display-button-selected button" href="#">В избранном</a>
             <span class="visually-hidden">Количество звезд</span>
             <span class="catalog-display-rating">Рейтинг: 9,2</span>
 
           </li>
           <li class="catalog-display-item">
             <a class="catalog-display-link" href="#">
-              <img src="images/hotel-3.jpg" width="300" height="211" alt="Территория Desert Quail Inn">
+              <img src="images/hotel-quail.jpg" width="300" height="211" alt="Территория Desert Quail Inn">
               <h3 class="catalog-display-title">Desert Quail Inn</h3>
             </a>
             <span class="catalog-display-discription">Гостиница</span>
             <span class="catalog-display-discription">От 2500 ₽</span>
             <a class="catalog-display-button button" href="#">Подробнее</a>
-            <button class="catalog-display-button button" type="button">В избранное</button>
+            <a class="catalog-display-button button" href="#">В избранное</a>
             <span class="visually-hidden">Количество звезд</span>
             <span class="catalog-display-rating">Рейтинг: 6,9</span>
 
           </li>
           <li class="catalog-display-item">
             <a class="catalog-display-link" href="#">
-              <img src="images/hotel-4.jpg" width="300" height="211" alt="Территория GreenTree Inn">
+              <img src="images/hotel-greentree.jpg" width="300" height="211" alt="Территория GreenTree Inn">
               <h3 class="catalog-display-title">GreenTree Inn</h3>
             </a>
             <span class="catalog-display-discription">Гостиница</span>
             <span class="catalog-display-discription">От 1500 ₽</span>
             <a class="catalog-display-button button" href="#">Подробнее</a>
-            <button class="catalog-display-button button" type="button">В избранное</button>
+            <a class="catalog-display-button button" href="#">В избранное</a>
             <span class="visually-hidden">Количество звезд</span>
             <span class="catalog-display-rating">Рейтинг: 5,0</span>
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item">
+          <li class="pagination-item-current">
             <a href="#" class="pagination-link current">1</a>
           </li>
           <li class="pagination-item">
@@ -213,9 +215,9 @@
           </select>
         </label>
       </section>
-      <section class="newsletters catalog">
-        <h2 class="newsletters-title">Подпишитесь на рассылку</h2>
-        <p class="newsletters-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <section class="newsletters-catalog">
+        <h2 class="newsletters-catalog-title">Подпишитесь на рассылку</h2>
+        <p class="newsletters-catalog-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletters-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="newsletters-form-email" type="email" name="newsletters-email" placeholder="Ваш e-mail" required>
           <button class="newsletters-form-button" type="submit">Подписаться</button>
