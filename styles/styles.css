@@ -14,6 +14,9 @@
   font-display: swap;
 }
 
+:root {
+  --color-bg: #82B3D3;
+}
 /* * {
   outline: 3px solid red;
 } */
@@ -55,11 +58,22 @@ body {
 }
 
 .welcome-background {
-  background-image: url("../images/divider-mountains.svg"), url("../images/mountains.jpg");
-  background-size: auto 100% auto 100%;
+  background-image: url("../images/mountains.jpg");
+  background-color: var(--color-bg);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: center center;
   text-align: center;
+}
+
+.welcome-background::after {
+  height: 57px;
+  content: '';
+  background-image: url("../images/divider-mountains.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: block;
 }
 
 .welcome-title {
@@ -89,12 +103,12 @@ body {
 }
 
 .adventages-list > li:nth-child(1) {
-  background-color: #82B3D3;
+  background-color: var(--color-bg);
   color: #FFFFFF;
 }
 
 .adventages-list > li:nth-child(3) {
-  background-color: #82B3D3;
+  background-color: var(--color-bg);
   color: #FFFFFF;
 }
 
@@ -141,10 +155,9 @@ body {
 }
 
 .newsletters {
-  width: cover;
-  height: 411px;
-  background-color: #82B3D3;
+  background-color: var(--color-bg);
   background-image: url("../images/mountains-background-newsletters.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -174,7 +187,7 @@ body {
 }
 
 .catalog-header {
-  background-color: #82B3D3;
+  background-color: var(--color-bg);
   background-image: url("../images/mountains-background-filters.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -205,7 +218,7 @@ body {
 }
 
 .apply {
-  background-color: #82B3D3;
+  background-color: var(--color-bg);
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -267,7 +280,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   text-align: center;
-  background-color: #82B3D3;
+  background-color: var(--color-bg);
 
 }
 
@@ -286,11 +299,6 @@ body {
 
 .pagination-link.current {
   color:inherit;
-}
-
-.newsletters-catalog {
-  width: cover;
-  height: 411px;
 }
 
 .newsletters-catalog-title {
