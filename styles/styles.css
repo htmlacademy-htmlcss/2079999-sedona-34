@@ -18,9 +18,9 @@
   --color-bg: #82B3D3;
 }
 
-/* * {
+* {
   outline: 2px solid red;
-} */
+}
 
 html {
   height: 100%;
@@ -35,6 +35,17 @@ body {
   background-color: grey;
   color: #000000;
   height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {
@@ -52,7 +63,7 @@ body {
 
 .navigation {
   display: flex;
-  align-items: center;;
+  align-items: center;
 }
 
 .header-logo {
@@ -65,7 +76,7 @@ body {
 .navigation-list {
   padding: 0;
   list-style-type: none;
-  max-width: 520px;
+  width: 520px;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
@@ -78,9 +89,10 @@ body {
   padding: 0;
   margin-right: 70px;
   margin-left: auto;
-  max-width: 350px;
+  width: 350px;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 
@@ -105,6 +117,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   border: none;
+  padding: 9px 15px
 }
 
 .main-index {
@@ -115,17 +128,20 @@ body {
   flex-grow: 1;
 }
 
-.welcome-background .visually-hidden {
-  margin: 0;
+.welcome-background img {
+  display: block;
+  padding-top: 51px;
+  padding-bottom: 26px;
+  margin: 0 auto;
 }
+
+
 
 .welcome-background {
   background-image: url("../images/mountains.jpg");
   background-color: var(--color-bg);
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
-  background-position: center center;
-  text-align: center;
 }
 
 .welcome-background::after {
@@ -144,12 +160,16 @@ body {
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding: 63px 290px 31px;
 }
 
 .welcome-description {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+  margin: 0;
+  padding-bottom: 90px;
 }
 
 .adventages-list {
@@ -166,6 +186,31 @@ body {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding-top: 92px;
+  padding-bottom: 30px;
+  /* width: 230px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.adventages-description-num {
+  display: block;
+  padding-bottom: 30px;
+}
+
+.adventages-description {
+  display: block;
+  margin: 0;
+  padding: 0 85px 92px;
+}
+
+.adventages-list-infrastructure .adventages-title {
+  padding-top: 182px;
+}
+
+.adventages-list-infrastructure .adventages-description {
+  padding-bottom: 81px;
 }
 
 .adventages-list li {
@@ -226,17 +271,32 @@ body {
   text-align: center;
 }
 
+.offer {
+  padding-bottom: 93px;
+}
+
 .offer-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  padding: 91px 0 29px;
 }
 
 .offer-discription {
   font-size: 22px;
   line-height: 26px;
+  text-align: center;
+  margin: 0;
+  padding: 0 304px 56px;
+}
+
+.offer-button {
+  display: block;
+  padding: 12px 0;
+  margin: 0 313px;
   text-align: center;
 }
 
@@ -254,6 +314,9 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #FFFFFF;
+  margin: 0;
+  padding-top: 94px;
+  padding-bottom: 29px;
 }
 
 .newsletters-discription {
@@ -261,23 +324,39 @@ body {
   line-height: 26px;
   text-align: center;
   color: #FFFFFF;
+  margin: 0;
+  padding: 0 362px 46px;
+}
+
+.newsletters-form {
+  text-align: center;
+  padding-bottom: 94px;
 }
 
 .footer-wrap {
-  display: flex;
-  margin: 40px 70px 30px;
+  display: grid;
+  grid-template-columns: 449px 331px 420px;
+
 }
 
-.contact {
-  flex-basis: 33.3%;
-  text-align: center;
+.contact-site-link {
+  display: block;
+  margin: 49px 70px 38px 235px;
 }
 
 .contact-social-list {
   list-style-type: none;
+  width: 200px;
   display: flex;
   justify-content: center;
+  padding: 0;
+  margin: 45px 186px 35px 70px;
+  justify-content: flex-start;
+}
 
+.contact-social-link {
+  display: block;
+  width: 47px;
 }
 
 .contact-phone {
@@ -287,6 +366,8 @@ body {
   text-transform: uppercase;
   color: inherit;
   text-decoration: none;
+  display: block;
+  margin: 45px 0 35px;
 }
 
 .catalog-header {
