@@ -122,20 +122,25 @@
           <h2 class="visually-hidden">Каталог гостиниц</h2>
           <div class="catalog-display-wrap">
             <p class="catalog-display-found">Найдено гостиниц: 38</p>
-            <select class="select-control" aria-label="Сортировка">
+            <select class="select-control-filter" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
-            <a href="#" class="button-display current">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a href="#" class="button-display">
-              <span class="visually-hidden">Показать cлайдшоу</span>
-            </a>
-            <a href="#" class="button-display">
-              <span class="visually-hidden">Показать список</span>
-            </a>
+            <div class="button-disply-wrap">
+              <a href="#" class="button-display current">
+                <span class="visually-hidden">Показать карточки</span>
+                <span>1</span>
+              </a>
+              <a href="#" class="button-display">
+                <span class="visually-hidden">Показать cлайдшоу</span>
+                <span>1</span>
+              </a>
+              <a href="#" class="button-display">
+                <span class="visually-hidden">Показать список</span>
+                <span>1</span>
+              </a>
+           </div>
           </div>
           <ul class="catalog-display-list">
             <li class="catalog-display-item">
@@ -148,6 +153,7 @@
               <a class="catalog-display-button button" href="#">Подробнее</a>
               <a class="catalog-display-button button" href="#">В избранное</a>
               <span class="visually-hidden">Количество звезд</span>
+              <span class="catalog-display-stars">Звезды</span>
               <span class="catalog-display-rating">Рейтинг: 8,5</span>
             </li>
             <li class="catalog-display-item">
@@ -160,6 +166,7 @@
               <a class="catalog-display-button button" href="#">Подробнее</a>
               <a class="catalog-display-button-selected button" href="#">В избранном</a>
               <span class="visually-hidden">Количество звезд</span>
+              <span class="catalog-display-stars">Звезды</span>
               <span class="catalog-display-rating">Рейтинг: 9,2</span>
 
             </li>
@@ -173,6 +180,7 @@
               <a class="catalog-display-button button" href="#">Подробнее</a>
               <a class="catalog-display-button button" href="#">В избранное</a>
               <span class="visually-hidden">Количество звезд</span>
+              <span class="catalog-display-stars">Звезды</span>
               <span class="catalog-display-rating">Рейтинг: 6,9</span>
 
             </li>
@@ -186,39 +194,42 @@
               <a class="catalog-display-button button" href="#">Подробнее</a>
               <a class="catalog-display-button button" href="#">В избранное</a>
               <span class="visually-hidden">Количество звезд</span>
+              <span class="catalog-display-stars">Звезды</span>
               <span class="catalog-display-rating">Рейтинг: 5,0</span>
             </li>
           </ul>
-          <ul class="pagination-list">
-            <li class="pagination-item-current">
-              <a href="#" class="pagination-link current">1</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-link">2</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-link">3</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-link">4</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-link other">
-                <span class="visually-hidden">Остальные страницы</span>
-              </a>
-            </li>
-            <li class="pagination-item">
-              <a href="#" class="pagination-link">10</a>
-            </li>
-          </ul>
-          <label class="select-title">
-            Гостиниц на странице:
-            <select class="select-control">
-              <option value="1">1</option>
-              <option value="4">4</option>
-              <option value="8">8</option>
-            </select>
-          </label>
+          <div class="pagination-wrap">
+            <ul class="pagination-list">
+              <li class="pagination-item-current">
+                <a href="#" class="pagination-link current">1</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">2</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">3</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">4</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link other">
+                  <span class="visually-hidden">Остальные страницы</span>
+                </a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="pagination-link">10</a>
+              </li>
+            </ul>
+            <label class="select-title">
+              Гостиниц на странице:
+              <select class="select-control-output ">
+                <option value="1">1</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+              </select>
+            </label>
+          </div>
         </section>
         <section class="newsletters-catalog">
           <h2 class="newsletters-catalog-title">Подпишитесь на рассылку</h2>
@@ -237,18 +248,21 @@
             <h3 class="visually-hidden">Соцсети</h3>
             <ul class="contact-social-list">
               <li class="contact-social-item">
-                <a class="contact-social-vk" href="https://vk.com/htmlacademy">
+                <a class="contact-social-link vk" href="https://vk.com/htmlacademy">
                   <span class="visually-hidden">Вконтакте</span>
+                  <span>1</span>
                 </a>
               </li>
               <li class="contact-social-item">
-                <a class="contact-social-telegram" href="https://t.me/htmlacademy">
+                <a class="contact-social-link telegram" href="https://t.me/htmlacademy">
                   <span class="visually-hidden">Telegram</span>
+                  <span>1</span>
                 </a>
               </li>
               <li class="contact-social-item">
-                <a class="contact-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <a class="contact-social-link youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Youtube</span>
+                  <span>1</span>
                 </a>
               </li>
             </ul>
