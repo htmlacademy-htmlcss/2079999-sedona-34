@@ -604,8 +604,11 @@ body {
   background-color: #F2F2F2;
   width: 60px;
   margin-right: 8px;
-
   border-radius: 4px;
+}
+
+.pagination-list li:last-child {
+  margin-right: 0;
 }
 
 .pagination-link.current {
