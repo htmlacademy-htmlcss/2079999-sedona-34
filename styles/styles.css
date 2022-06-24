@@ -175,8 +175,15 @@ body {
 
 .navigation-item .button:active,
 .offer-button:active,
-.catalog-display-button:active {
+.catalog-display-button:active,
+.catalog-display-button-selected:active,
+.apply:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.apply:hover,
+.button.in-fav:hover {
+  background-color: #68A2CA;
 }
 
 .button {
@@ -192,6 +199,7 @@ body {
   padding: 9px 15px;
   border-radius: 4px;
   text-align: center;
+  cursor: pointer;
 }
 
 .main-index {
@@ -619,6 +627,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   border-radius: 4px;
+
 }
 
 .reset {
@@ -726,6 +735,10 @@ body {
   background-color: #7DB54F;
   margin-bottom: 16px;
   border-radius: 4px;
+}
+
+.catalog-display-button-selected:hover {
+  background-color: #6C9E42;
 }
 
 .catalog-display-stars {
