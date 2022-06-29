@@ -882,13 +882,40 @@ body {
   padding-bottom: 46px;
 }
 
+.newsletters-form {
+  display: flex;
+  justify-content: center;
+}
 .newsletters-form-email {
-  padding: 20px 0;
+  padding: 20px 0 20px 22px;
   width: 600px;
+  border: none;
+  border-radius: 10px 0px 0px 10px;
+  font-family: inherit;
+}
+
+.newsletters-form-email::placeholder {
+  color: #000000;
+  opacity: 0.6;
 }
 
 .newsletters-form-button {
   padding: 20px 0;
   width: 200px;
   border-radius: 0px 10px 10px 0px;
+  background-color: #82B3D3;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.newsletters-form-button:hover {
+  background-color: #68A2CA;
+}
+
+.newsletters-form-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.newsletters-catalog .newsletters-form-email {
+  background-color: #F2F2F2;;
 }
