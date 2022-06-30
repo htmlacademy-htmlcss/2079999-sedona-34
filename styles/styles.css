@@ -618,6 +618,53 @@ body {
 }
 .control {
   color: #FFFFFF;
+  display: flex;
+}
+
+.control:hover .control-mark.checkbox,
+.control:active .control-mark.checkbox {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+/* .control:focus .control-mark {
+  border: 3px solid #83B3D3;
+} */
+
+.control-input:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark.checkbox {
+  background-image: url("../images/check-button.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.control-mark.checkbox {
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  margin-right: 19px;
+}
+
+.control-mark.radio {
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  margin-right: 19px;
+  position: relative;
+}
+
+.control-input[type="radio"]:checked + .control-mark.radio::after {
+  position:absolute;
+  content: "";
+  top: 25%;
+  left: 25%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #3F5E72;
 }
 
 .apply {
