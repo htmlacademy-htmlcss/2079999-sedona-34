@@ -16,13 +16,19 @@
 
             <ul class="navigation-list">
               <li class="navigation-item">
-                <a class="navigation-link" href ="index.html"><span>Главная</span></a>
+                <a class="navigation-link" href ="index.html">
+                  <span>Главная</span>
+                </a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href ="#"><span>О Седоне</span></a>
+                <a class="navigation-link" href ="#">
+                  <span>О Седоне</span>
+                </a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href ="catalog.html"><span>Гостиницы</span></a>
+                <a class="navigation-link" href ="catalog.html">
+                  <span>Гостиницы</span>
+                </a>
               </li>
             </ul>
             <ul class="navigation-user">
@@ -167,6 +173,37 @@
           </section>
        </div>
       </footer>
+    </div>
+    <div class="booking-container booking-container-close">
+      <div class="booking-window">
+        <button class="booking-window-close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="booking-content">
+          <h2 class="booking-content-title">Поиск гостиницы в Седоне</h2>
+          <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+            <div class="form-field">
+              <label class="form-field-description" for="check-in">Дата заезда:</label>
+              <input class="form-field-input" type="text" id="check-in" name="check-in" placeholder="27 апреля 2020">
+              <p>Мы не можем отправить вас в прошлое.</p>
+            </div>
+            <div class="form-field">
+              <label class="form-field-description" for="check-out">Дата выезда:</label>
+              <input class="form-field-input" type="text" id="check-out" name="check-out" placeholder="1 сентября 2021">
+              <p>На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+            <div class="form-field">
+              <label class="form-field-description" for="adult-count">Взрослые:</label>
+              <input class="form-field-input" type="text" id="adult-count" name="adult-count" placeholder="2">
+            </div>
+            <div class="form-field">
+              <label class="form-field-description" for="child-count">Дети:</label>
+              <input class="form-field-input" type="text" id="child-count" name="child-count" placeholder="1">
+            </div>
+            <button class="booking-form-button button" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 </html>
