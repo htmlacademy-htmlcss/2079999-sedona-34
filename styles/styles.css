@@ -1110,9 +1110,9 @@ body {
   background-color: #F2F2F2;;
 }
 
-/* .booking-container.booking-container-close {
+.booking-container.booking-container-close {
   display: none;
-} */
+}
 
 .booking-container {
   position: fixed;
@@ -1125,7 +1125,6 @@ body {
   z-index: 2;
 }
 
-
 .booking-window {
   position: relative;
   width: 715px;
@@ -1135,6 +1134,59 @@ body {
   margin: auto;
 }
 
-.booking-form-button {
+.booking-window-close {
   position: absolute;
+}
+
+.booking-content-title {
+  margin: 0;
+  padding: 62px 234px 63px 68px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.form-field-description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+  color: #000000;
+  padding: 0 42px 0 70px;
+}
+
+.form-field-check-in-information {
+  padding: 0 70px 11px 225px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: flex-end;
+  color: #FF5757;
+}
+
+.form-field-check-out-information {
+  padding: 0 0 11px 225px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.form-field-wrap {
+  display: flex;
+}
+
+.form-field.human-count {
+  display: flex;
 }
