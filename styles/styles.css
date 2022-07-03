@@ -987,12 +987,20 @@ body {
 }
 
 .pagination-wrap {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-left: 73px;
   margin-right: 71px;
   align-items:center;
 }
+
+.pagination-wrap::before {
+  position: absolute;
+  content: '';
+  border: 1px solid #E6E6E6;
+}
+
 .pagination-list {
   list-style-type: none;
   margin: 0;
