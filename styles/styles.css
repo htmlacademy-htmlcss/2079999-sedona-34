@@ -1118,9 +1118,9 @@ body {
   background-color: #F2F2F2;;
 }
 
-.booking-container.booking-container-close {
+/* .booking-container.booking-container-close {
   display: none;
-}
+} */
 
 .booking-container {
   position: fixed;
@@ -1135,20 +1135,30 @@ body {
 
 .booking-window {
   position: relative;
-  width: 715px;
   background: #FFFFFF;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   margin: auto;
+  padding: 62px 70px 70px 70px;
 }
 
 .booking-window-close {
   position: absolute;
+  width: 53px;
+  height: 53px;
+  background: #F2F2F2;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  right: 70px;
+  top: 54px;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .booking-content-title {
   margin: 0;
-  padding: 62px 234px 63px 68px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 700;
@@ -1156,6 +1166,7 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  padding-bottom: 63px;
 }
 
 .form-field-description {
@@ -1166,35 +1177,158 @@ body {
   line-height: 26px;
   text-transform: capitalize;
   color: #000000;
-  padding: 0 42px 0 70px;
+
 }
 
 .form-field-check-in-information {
-  padding: 0 70px 11px 225px;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 11px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
-  display: flex;
-  align-items: flex-end;
   color: #FF5757;
+  grid-column: 2 / -1;
 }
 
 .form-field-check-out-information {
-  padding: 0 0 11px 225px;
+  margin: 0;
+  padding-top: 8px;
+  padding-bottom: 11px;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #333333;
+  grid-column: 2 / -1;
 }
 
-.form-field-wrap {
-  display: flex;
+
+.booking-form {
+  position: relative;
+  display: grid;
+  grid-template-columns: 155px 133px 56px 97px 134px;
 }
 
-.form-field.human-count {
-  display: flex;
+.form-field-input[id="check-in"],
+.form-field-input[id="check-out"] {
+  grid-column: 2 / -1;
+
+}
+.booking-form-button-additional {
+  position: absolute;
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.calendar {
+  background-image: url("../images/calendar.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.calendar.check-in {
+  right: 19px;
+  top: 18px;
+}
+
+.calendar.check-out {
+  right: 19px;
+  top: 108px;
+}
+
+.count-minus {
+  background-image: url("../images/minus-modal.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.count-minus.adult {
+  left: 174px;
+  top: 197px;
+}
+
+.count-minus.child {
+  left: 460px;
+  top: 197px;
+}
+
+.count-plus {
+  background-image: url("../images/plus-modal.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.count-plus.adult {
+  left: 256px;
+  top: 197px;
+}
+
+.count-plus.child {
+  left: 542px;
+  top: 197px;
+}
+
+.form-field-input {
+  padding: 15px 19px 14px 19px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 4px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.form-field-input::placeholder {
+  color: #000000;
+}
+
+.form-field-description {
+  padding-top: 12px;
+}
+
+.form-field-description[for="check-out"] {
+  grid-column: 1 / 2;
+}
+
+.form-field-description[for="child-count"] {
+  grid-column: 4 / 5;
+}
+
+.booking-form-button {
+  margin-top: 40px;
+  padding: 12px 26px;
+  grid-column: 1 / -1;
+  background: #83B3D3;
+  border-radius: 10px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.form-field-input.count {
+  position: relative;
+  text-align: center;
+  padding: 15px 40px 14px 40px;
+}
+
+.form-field-input.count::-webkit-outer-spin-button,
+.form-field-input.count::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
