@@ -185,20 +185,22 @@
             <div class="form-field">
               <label class="form-field-description" for="check-in">Дата заезда:</label>
               <input class="form-field-input" type="text" id="check-in" name="check-in" placeholder="27 апреля 2020">
-              <p>Мы не можем отправить вас в прошлое.</p>
+              <p class="form-field-check-in-information">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="form-field">
               <label class="form-field-description" for="check-out">Дата выезда:</label>
               <input class="form-field-input" type="text" id="check-out" name="check-out" placeholder="1 сентября 2021">
-              <p>На эти даты есть свободные номера. Пока есть.</p>
+              <p class="form-field-check-out-information">На эти даты есть свободные номера. Пока есть.</p>
             </div>
-            <div class="form-field">
-              <label class="form-field-description" for="adult-count">Взрослые:</label>
-              <input class="form-field-input" type="text" id="adult-count" name="adult-count" placeholder="2">
-            </div>
-            <div class="form-field">
-              <label class="form-field-description" for="child-count">Дети:</label>
-              <input class="form-field-input" type="text" id="child-count" name="child-count" placeholder="1">
+            <div class="form-field-wrap">
+              <div class="form-field human-count">
+                <label class="form-field-description" for="adult-count">Взрослые:</label>
+                <input class="form-field-input" type="text" id="adult-count" name="adult-count" placeholder="2">
+              </div>
+              <div class="form-field human-count">
+                <label class="form-field-description" for="child-count">Дети:</label>
+                <input class="form-field-input" type="text" id="child-count" name="child-count" placeholder="1">
+              </div>
             </div>
             <button class="booking-form-button button" type="submit">Найти</button>
           </form>
