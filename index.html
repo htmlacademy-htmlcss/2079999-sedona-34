@@ -16,13 +16,19 @@
 
             <ul class="navigation-list">
               <li class="navigation-item">
-                <a class="navigation-link" href ="index.html"><span>Главная</span></a>
+                <a class="navigation-link" href ="index.html">
+                  <span>Главная</span>
+                </a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href ="#"><span>О Седоне</span></a>
+                <a class="navigation-link" href ="#">
+                  <span>О Седоне</span>
+                </a>
               </li>
               <li class="navigation-item">
-                <a class="navigation-link" href ="catalog.html"><span>Гостиницы</span></a>
+                <a class="navigation-link" href ="catalog.html">
+                  <span>Гостиницы</span>
+                </a>
               </li>
             </ul>
             <ul class="navigation-user">
@@ -38,7 +44,7 @@
                 </a>
               </li>
               <li class="navigation-item">
-                <a class="button" href ="#">Хочу сюда!</a>
+                <a class="want-here button" href ="#">Хочу сюда!</a>
               </li>
             </ul>
 
@@ -167,6 +173,54 @@
           </section>
        </div>
       </footer>
+    </div>
+    <div class="booking-container booking-container-close">
+      <div class="booking-window">
+        <button type="button" class="booking-window-close">
+          <span class="visually-hidden">Закрыть</span>
+          <svg class="booking-window-close-icon"width="14" height="14" viewBox="0 0 14 14" fill="black" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"/>
+          </svg>
+        </button>
+        <h2 class="booking-content-title">Поиск гостиницы в Седоне</h2>
+        <form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="form-field-description" for="check-in">Дата заезда:</label>
+          <input class="form-field-input" type="text" id="check-in" name="check-in" placeholder="27 апреля 2020">
+          <button type="button" class="booking-form-button-additional calendar check-in">
+            <span class="visually-hidden">Календарь</span>
+          </button>
+          <p class="form-field-check-in-information">Мы не можем отправить вас в прошлое.</p>
+          <label class="form-field-description" for="check-out">Дата выезда:</label>
+          <input class="form-field-input" type="text" id="check-out" name="check-out" placeholder="1 сентября 2021">
+          <button type="button" class="booking-form-button-additional calendar check-out">
+            <span class="visually-hidden">Календарь</span>
+          </button>
+          <p class="form-field-check-out-information">На эти даты есть свободные номера. Пока есть.</p>
+          <label class="form-field-description" for="adult-count">Взрослые:</label>
+          <button type="button" class="booking-form-button-additional count-minus adult">
+            <span class="visually-hidden">Минус один взрослый</span>
+          </button>
+          <input class="form-field-input count" type="number" id="adult-count" name="adult-count" placeholder="2">
+          <button type="button" class="booking-form-button-additional count-plus adult">
+            <span class="visually-hidden">Плюс один взрослый</span>
+          </button>
+          <label class="form-field-description" for="child-count">Дети:</label>
+          <button type="button" class="information-button">
+            <span class="visually-hidden">Дополнительная информация</span>
+          </button>
+          <span class="information-button-text">
+            Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до&nbsp;6 лет размещаются бесплатно.
+          </span>
+          <button type="button" class="booking-form-button-additional count-minus child">
+            <span class="visually-hidden">Минус один ребенок</span>
+          </button>
+          <input class="form-field-input count" type="number" id="child-count" name="child-count" placeholder="1">
+          <button type="button" class="booking-form-button-additional count-plus child">
+            <span class="visually-hidden">Плюс один ребенок</span>
+          </button>
+          <button type="submit" class="booking-form-button button" type="submit">Найти</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
