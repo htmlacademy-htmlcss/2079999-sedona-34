@@ -13,33 +13,45 @@
           <a class="header-logo" href="index.html">
             <img class="logo" src="images/logo.svg" width="139" height="70" alt="City of Sedona">
           </a>
-          <ul class="navigation-list">
-            <li class="navigation-item">
-              <a class="navigation-link" href ="index.html"><span>Главная</span></a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href ="#"><span>О Седоне</span></a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href ="catalog.html"><span>Гостиницы</span></a>
-            </li>
-          </ul>
-          <ul class="navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link search" href ="#">
-                <span class="visually-hidden">Поиск</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link favourites" href ="#">
-                <span class="visually-hidden">Избранное</span>
-                <span class="favourites-count">12</span>
-              </a>
-            </li>
-            <li class="navigation-item">
-              <a class="want-here button" href ="#">Хочу сюда!</a>
-            </li>
-          </ul>
+            <ul class="navigation-list">
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href ="index.html">
+                  <span>Главная</span>
+                </a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href ="#">
+                  <span>О Седоне</span>
+                </a>
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link" href ="catalog.html">
+                  <span>Гостиницы</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="navigation-user">
+              <li class="navigation-user-item">
+                <a class="navigation-user-link search" href ="#">
+                  <span class="visually-hidden">Поиск</span>
+                  <svg class="navigation-item-icon-search" width="18" height="18" viewBox="0 0 18 18" fill="black" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.1585 17.05L14.448 13.35C15.4508 12.05 16.1528 10.35 16.1528 8.44995C16.1528 4.04995 12.5426 0.449951 8.13013 0.449951C3.71764 0.449951 0.107422 4.14995 0.107422 8.54995C0.107422 12.95 3.71764 16.55 8.13013 16.55C9.93524 16.55 11.6401 15.95 13.044 14.85L16.7545 18.55L18.1585 17.05ZM8.13013 14.55C4.82076 14.55 2.1131 11.85 2.1131 8.54995C2.1131 5.24995 4.82076 2.54995 8.13013 2.54995C11.4395 2.54995 14.1472 5.24995 14.1472 8.54995C14.1472 11.85 11.4395 14.55 8.13013 14.55Z"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="navigation-user-item">
+                <a class="navigation-user-link favourites" href ="#">
+                  <span class="visually-hidden">Избранное</span>
+                  <svg width="20" height="17" viewBox="0 0 18 17" fill="black" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.57663 17C9.27578 17 8.97493 16.9 8.77436 16.6C3.35903 10.5 2.05534 9.1 1.75449 8.7C1.0525 7.8 0.651367 6.6 0.651367 5.4C0.651367 2.4 3.05818 0 6.16698 0C7.47067 0 8.67407 0.5 9.67691 1.3C10.6797 0.5 11.9834 0 13.1868 0C16.1954 0 18.7025 2.4 18.7025 5.4C18.7025 6.7 18.201 7.9 17.3988 8.8L10.3789 16.7C10.1783 16.9 9.97776 17 9.57663 17ZM3.5596 7.5C3.86045 7.9 7.06953 11.5 9.67691 14.4L15.8945 7.4C16.3959 6.9 16.5965 6.2 16.5965 5.4C16.5965 3.6 15.0922 2.1 13.2871 2.1C12.2843 2.1 11.2815 2.6 10.5795 3.4C10.2786 3.7 9.97776 3.8 9.67691 3.8C9.37606 3.8 9.07521 3.6 8.87464 3.4C8.17265 2.6 7.16982 2.1 6.16698 2.1C4.36187 2.1 2.85761 3.6 2.85761 5.4C2.75733 6.3 3.15846 7 3.5596 7.5C3.45931 7.5 3.45931 7.5 3.5596 7.5Z"/>
+                  </svg>
+                  <span class="favourites-count">12</span>
+                </a>
+              </li>
+              <li class="navigation-user-item">
+                <a class="want-here button" href ="#">Хочу сюда!</a>
+              </li>
+            </ul>
         </nav>
       </header>
       <main class="main-catalog">
@@ -88,7 +100,6 @@
                   </li>
                 </ul>
               </fieldset>
-
               <fieldset class="catalog-filters-group">
               <legend class="catalog-filters-title">Тип Жилья:</legend>
               <ul class="catalog-filters-list">
@@ -116,20 +127,16 @@
               </ul>
               </fieldset>
               <fieldset class="catalog-filters-group range">
-                <legend class="catalog-filters-title">Стоимость, ₽:</legend>
+                <legend class="catalog-filters-title range">Стоимость, ₽:</legend>
                 <div class="range">
                   <div class="range-price">
-                    <label class="range-label">
-                      <div class="range-label-wrap min">
-                        <input class="range-input min" type="number" value="0" name="min-price">
-                        <span>от</span>
-                      </div>
+                    <label class="range-label-wrap min">
+                      <input class="range-input min" type="number" value="0" name="min-price">
+                      <span>от</span>
                     </label>
-                    <label class="range-label">
-                      <div class="range-label-wrap max">
-                        <input class="range-input max" type="number" value="9000" name="max-price">
-                        <span>до</span>
-                      </div>
+                    <label class="range-label-wrap max">
+                      <input class="range-input max" type="number" value="9000" name="max-price">
+                      <span>до</span>
                     </label>
                   </div>
                   <div class="range-scale">
@@ -144,7 +151,6 @@
                   <button class="button reset" type="reset"><span>Сбросить</span></button>
                 </div>
               </fieldset>
-
             </form>
           </section>
         </header>
@@ -217,7 +223,6 @@
               <span class="visually-hidden">Количество звезд</span>
               <span class="catalog-display-stars"></span>
               <span class="catalog-display-rating">Рейтинг: 9,2</span>
-
             </li>
             <li class="catalog-display-item">
               <a class="catalog-display-link" href="#">
@@ -231,7 +236,6 @@
               <span class="visually-hidden">Количество звезд</span>
               <span class="catalog-display-stars"></span>
               <span class="catalog-display-rating">Рейтинг: 6,9</span>
-
             </li>
             <li class="catalog-display-item">
               <a class="catalog-display-link" href="#">
@@ -250,31 +254,31 @@
           <div class="pagination-wrap">
             <ul class="pagination-list">
               <li class="pagination-item current">
-                <a href="#" class="pagination-link current">1</a>
+                <a class="pagination-link current" href="#">1</a>
               </li>
               <li class="pagination-item">
-                <a href="#" class="pagination-link">2</a>
+                <a class="pagination-link" href="#">2</a>
               </li>
               <li class="pagination-item">
-                <a href="#" class="pagination-link">3</a>
+                <a class="pagination-link" href="#">3</a>
               </li>
               <li class="pagination-item">
-                <a href="#" class="pagination-link">4</a>
+                <a class="pagination-link" href="#">4</a>
               </li>
               <li class="pagination-item">
-                <a href="#" class="pagination-link other">...
+                <a class="pagination-link other" href="#">...
                   <span class="visually-hidden">Остальные страницы</span>
                 </a>
               </li>
               <li class="pagination-item">
-                <a href="#" class="pagination-link">10</a>
+                <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
             <label class="select-title">
               Гостиниц на странице:
               <select class="select-control-output">
                 <option value="1">1</option>
-                <option value="4">4</option>
+                <option value="4" selected>4</option>
                 <option value="8">8</option>
               </select>
             </label>
@@ -282,14 +286,13 @@
         </section>
         <section class="newsletters-catalog">
           <h2 class="newsletters-catalog-title">Подпишитесь на рассылку</h2>
-          <p class="newsletters-catalog-discription">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="newsletters-catalog-discription">&nbsp;Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="newsletters-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="newsletters-form-email" type="email" name="newsletters-email" placeholder="Ваш e-mail" required>
             <button class="newsletters-form-button button" type="submit">Подписаться</button>
           </form>
         </section>
       </main>
-
       <footer class="footer">
         <h2 class="visually-hidden">Контактная информация</h2>
         <div class="footer-wrap">
@@ -315,9 +318,9 @@
               <li class="contact-social-item">
                 <a class="contact-social-link youtube" href="https://www.youtube.com/user/htmlacademyru">
                   <span class="visually-hidden">Youtube</span>
-                  <svg class="contact-social-link-icon youtube" aria-hidden="true" focusable="false" width="20" height="14" viewBox="0 0 20 14" fill="#83B3D3" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8136 0.418176C18.6746 0.648666 19.3513 1.32532 19.5818 2.18637C19.9983 3.74547 20 7.00033 20 7.00033C20 7.00033 20 10.2552 19.5818 11.8143C19.3513 12.6753 18.6746 13.352 17.8136 13.5825C16.2545 14.0007 9.99996 14.0007 9.99996 14.0007C9.99996 14.0007 3.74547 14.0007 2.18636 13.5825C1.32532 13.352 0.648666 12.6753 0.418176 11.8143C0 10.2552 0 7.00033 0 7.00033C0 7.00033 0 3.74547 0.418176 2.18637C0.648666 1.32532 1.32532 0.648666 2.18636 0.418176C3.74547 0 9.99996 0 9.99996 0C9.99996 0 16.2545 0 17.8136 0.418176ZM13.194 7.00061L7.99808 10.0002V4.00092L13.194 7.00061Z"/>
-                  </svg>
+                  <svg class="contact-social-link-icon youtube" aria-hidden="true" focusable="false" width="23" height="18" viewBox="0 0 23 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.9402 0.5H3.50738C1.64668 0.5 0.333252 2.09375 0.333252 3.9V13.9937C0.333252 15.9062 1.64668 17.5 3.50738 17.5H19.1591C20.8009 17.5 22.3333 15.9062 22.3333 14.1V3.9C22.1143 2.09375 20.8009 0.5 18.9402 0.5ZM7.99494 13.0375V4.9625L15.3283 9L7.99494 13.0375Z" fill="#83B3D3"/>
+                    </svg>
                 </a>
               </li>
             </ul>
@@ -337,7 +340,5 @@
        </div>
       </footer>
     </div>
-
-
   </body>
 </html>
