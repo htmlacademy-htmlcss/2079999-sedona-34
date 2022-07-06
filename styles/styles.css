@@ -155,7 +155,7 @@ body {
   left: 24px;
   width: 20px;
   height: 20px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -812,7 +812,7 @@ body {
 .range-label-wrap.min span {
   top: 12px;
   left: 114px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -824,7 +824,7 @@ body {
 .range-label-wrap.max span {
   top: 12px;
   right: 17px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -902,7 +902,7 @@ body {
 .range-input {
   width: 123px;
   padding: 11px 0 11px 18px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1372,7 +1372,7 @@ body {
   width: 578px;
   border: none;
   border-radius: 10px 0px 0px 10px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1488,7 +1488,7 @@ body {
 .booking-content-title {
   margin: 0;
   padding-bottom: 63px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -1498,7 +1498,7 @@ body {
 }
 
 .form-field-description {
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1512,7 +1512,7 @@ body {
   margin: 0;
   padding-top: 8px;
   padding-bottom: 11px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1525,7 +1525,7 @@ body {
   margin: 0;
   padding-top: 8px;
   padding-bottom: 11px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1635,7 +1635,7 @@ body {
 .form-field-input {
   padding: 15px 19px 14px 19px;
   border-radius: 4px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -1697,7 +1697,7 @@ body {
   grid-column: 1 / -1;
   margin-top: 40px;
   padding: 12px 26px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1763,7 +1763,7 @@ body {
   display: none;
   width: 220px;
   padding: 15px 18px 23px 22px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
