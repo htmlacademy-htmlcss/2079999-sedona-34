@@ -338,11 +338,7 @@ body {
   color: #ffffff;
 }
 
-.adventages-list > li:nth-child(1) .adventages-description {
-  color: #ffffff;
-}
-
-.adventages-list > li:nth-child(3) .adventages-description {
+.adventages-description.content {
   color: #ffffff;
 }
 
